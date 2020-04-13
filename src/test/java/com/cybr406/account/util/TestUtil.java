@@ -26,7 +26,7 @@ public class TestUtil {
                 "%s must extend %s", className, baseClass.getCanonicalName()));
     }
 
-    public static <T extends Annotation> void assertClassAnnotationIsPresent(String className, Class<T> annotationClass) {
+    public static <T extends Annotation> T assertClassAnnotationIsPresent(String className, Class<T> annotationClass) {
         Class<?> clazz = assertClassExists(className);
         List<Annotation> annotations = Arrays.asList(clazz.getAnnotations());
         T annotation = clazz.getAnnotation(annotationClass);
@@ -34,6 +34,7 @@ public class TestUtil {
                 "%s must be annotated with %s at the class level",
                 className,
                 annotationClass.getCanonicalName()));
+        return annotation;
     }
 
     public static void assertClassAnnotationIsPresent(String className, String annotationName, String message) {

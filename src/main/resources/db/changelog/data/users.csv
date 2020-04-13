@@ -1,2 +1,4 @@
 USERNAME,ENABLED,PASSWORD
 admin,true,{bcrypt}$2a$10$mzhwduIAIGoZrBdBS/zHmevtN0NouROvgcbJNxpOosR2HMAwXz5Fi
+post,true,{bcrypt}$2a$10$cTChf3E6pE22JuUmivfHqu8ZvVF5YpCSGbPNoDxhS1BgI1aBPgJlm
+user,true,{bcrypt}$2a$10$YsNzy.TYe7sNuljppIDt9.zQ9gu0HcRyY0mKN.3r10WRr9Se.7MfS

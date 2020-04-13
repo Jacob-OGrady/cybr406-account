@@ -72,4 +72,18 @@
             <column name="AUTHORITY" type="STRING"/>
         </loadData>
     </changeSet>
+
+    <!--
+    Profiles
+    -->
+
+    <changeSet author="Ry" id="profile-data">
+        <loadData file="db/changelog/data/profiles.csv" tableName="PROFILE">
+            <column name="USERNAME" type="STRING"/>
+            <column name="FIRST_NAME" type="STRING"/>
+            <column name="LAST_NAME" type="STRING"/>
+            <column name="INFO" type="STRING"/>
+        </loadData>
+    </changeSet>
+
 </databaseChangeLog>
