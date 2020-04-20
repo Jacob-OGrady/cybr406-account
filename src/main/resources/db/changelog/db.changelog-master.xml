@@ -26,20 +26,20 @@
 
     <changeSet author="Ry (generated)" id="1583814800976-2">
         <createTable tableName="AUTHORITIES">
-            <column name="USERNAME" type="VARCHAR_IGNORECASE(50)">
+            <column name="USERNAME" type="VARCHAR(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="AUTHORITY" type="VARCHAR_IGNORECASE(50)">
+            <column name="AUTHORITY" type="VARCHAR(50)">
                 <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
     <changeSet author="Ry (generated)" id="1583814800976-5">
         <createTable tableName="USERS">
-            <column name="USERNAME" type="VARCHAR_IGNORECASE(50)">
+            <column name="USERNAME" type="VARCHAR(50)">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="CONSTRAINT_4"/>
             </column>
-            <column name="PASSWORD" type="VARCHAR_IGNORECASE(500)">
+            <column name="PASSWORD" type="VARCHAR(500)">
                 <constraints nullable="false"/>
             </column>
             <column name="ENABLED" type="BOOLEAN">

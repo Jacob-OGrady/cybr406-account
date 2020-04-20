@@ -1,5 +1,6 @@
 package com.cybr406.account;
 
+import org.hibernate.annotations.Type;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Entity;
@@ -27,6 +28,7 @@ public class Profile {
     private String lastName;
 
     @Lob
+    @Type(type = "org.hibernate.type.TextType")
     private String info;
 
     public Profile() {}
